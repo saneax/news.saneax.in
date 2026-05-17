@@ -1,0 +1,32 @@
+services:
+  # ── News Portal (React + nginx) ──────────────────
+  news-portal:
+    build:
+      context: ./news-portal
+      dockerfile: Dockerfile
+    container_name: news-portal
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:4321:80"
+    networks:
+      - news-net
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:80/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ── Cloudflare Tunnel ─────────────────────────────
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: news-tunnel
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      - CF_TUNNEL_TOKEN=eyJhIjoiODNiYjUwODQwYjZhYmEyYzE4ODQ4ZjQ1NWI5NGY1OTMiLCJ0IjoiNDM2NDM2MzgtNTM2NC00ZmZkLTk1NmMtNDcxZjI3MGM1NTg0IiwicyI6Ik1XRm1abUkzT0RRdFpERTNNUzAwTXpjd0xXSmhOemN0TldSbVpqaGhZekV6WTJGaCJ9
+    networks:
+      - news-net
+
+networks:
+  news-net:
+    driver: bridge
