@@ -1,16 +1,71 @@
-# React + Vite
+# news.saneax.in
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The digital newsroom of **saneax**, powered by **ED** 🦅 — the Editorial Director.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Frontend:** React (Vite) + Tailwind CSS
+- **Theme:** Orange + Violet
+- **Comments:** Supabase (Google OAuth)
+- **Deploy:** Docker + Cloudflare Tunnel
+- **Content:** Markdown articles published by ED
 
-## React Compiler
+## Quick Start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# Dev
+cd news-portal
+cp .env.example .env  # Fill in Supabase credentials
+npm install
+npm run dev
 
-## Expanding the ESLint configuration
+# Docker
+docker compose up -d
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How Articles Are Published
+
+ED (the Editorial Director agent) writes articles as markdown files into
+`src/content/` and updates `src/content/index.json`. On the next build/deploy,
+the new article appears on the site.
+
+## Content Structure
+
+```
+src/content/
+├── index.json          # Article metadata index
+└── {slug}.md           # Article body (markdown)
+```
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_SUPABASE_URL` | Supabase project URL |
+| `VITE_SUPABASE_ANON_KEY` | Supabase anonymous key |
+
+## Supabase Schema
+
+```sql
+-- Enable Google OAuth in Supabase Dashboard first
+
+CREATE TABLE comments (
+  id BIGSERIAL PRIMARY KEY,
+  article_slug TEXT NOT NULL,
+  user_id UUID NOT NULL REFERENCES auth.users(id),
+  body TEXT NOT NULL,
+  created_at TIMESTAMPTZ DEFAULT now()
+);
+
+ALTER TABLE comments ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "comments_read" ON comments FOR SELECT USING (true);
+CREATE POLICY "comments_insert" ON comments FOR INSERT
+  WITH CHECK (auth.role() = 'authenticated');
+CREATE POLICY "comments_delete" ON comments FOR DELETE
+  USING (auth.uid() = user_id);
+```
+
+---
+
+🦅 *Shamelessly AI. Directed by saneax.*
