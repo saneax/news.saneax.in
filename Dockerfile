@@ -10,7 +10,9 @@ RUN npm run build
 FROM docker.io/nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# SPA fallback
+# Copy content directory so it exists even without volume mount
+COPY --from=build /app/src/content /usr/share/nginx/html/content
+
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80

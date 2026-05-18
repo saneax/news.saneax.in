@@ -2,7 +2,6 @@ import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import ReactMarkdown from 'react-markdown'
 import { getArticle } from '../lib/articles'
-import { supabase } from '../lib/supabase'
 import CommentSection from '../components/CommentSection'
 
 export default function Article() {
@@ -11,13 +10,14 @@ export default function Article() {
   const [notFound, setNotFound] = useState(false)
 
   useEffect(() => {
-    const data = getArticle(slug)
-    if (data) {
-      setArticle(data)
-      document.title = `${data.title} — saneax news`
-    } else {
-      setNotFound(true)
-    }
+    getArticle(slug).then(data => {
+      if (data) {
+        setArticle(data)
+        document.title = `${data.title} — saneax news`
+      } else {
+        setNotFound(true)
+      }
+    })
   }, [slug])
 
   if (notFound) {

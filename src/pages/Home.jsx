@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import { getAllArticles } from '../lib/articles'
 
 export default function Home() {
-  const articles = getAllArticles()
+  const [articles, setArticles] = useState([])
+
+  useEffect(() => {
+    getAllArticles().then(setArticles)
+  }, [])
 
   return (
     <div>
