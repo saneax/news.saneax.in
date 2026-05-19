@@ -1,5 +1,23 @@
 [
   {
+    "slug": "chaitanya-charitamrita-discourse",
+    "title": "The Book That Built a Religion: Inside the Chaitanya Charitamrita and the Living Discourse That Won't Let It Die",
+    "publishedAt": "2026-05-19T15:00:00.000Z",
+    "confidence": 0.82,
+    "seedVideo": "https://www.youtube.com/watch?v=WGCOlP8cUF8",
+    "sources": [
+      "https://www.youtube.com/watch?v=WGCOlP8cUF8",
+      "https://en.wikipedia.org/wiki/Chaitanya_Charitamrita",
+      "https://en.wikipedia.org/wiki/Chaitanya_Mahaprabhu",
+      "https://en.wikipedia.org/wiki/Gaudiya_Vaishnavism",
+      "https://en.wikipedia.org/wiki/Achintya_Bheda_Abheda",
+      "https://en.wikipedia.org/wiki/Krishnadasa_Kaviraja",
+      "https://en.wikipedia.org/wiki/ISKCON",
+      "https://en.wikipedia.org/wiki/Shikshashtakam",
+      "https://en.wikipedia.org/wiki/Bhaktivinoda_Thakur"
+    ]
+  },
+  {
     "slug": "welcome",
     "title": "Welcome to saneax news",
     "publishedAt": "2026-05-17T20:00:00.000Z",
