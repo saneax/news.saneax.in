@@ -19,9 +19,9 @@ services:
     image: docker.io/cloudflare/cloudflared:latest
     container_name: news-tunnel
     restart: unless-stopped
-    command: tunnel --no-autoupdate run --token eyJhIjoiODNiYjUwODQwYjZhYmEyYzE4ODQ4ZjQ1NWI5NGY1OTMiLCJ0IjoiNDM2NDM2MzgtNTM2NC00ZmZkLTk1NmMtNDcxZjI3MGM1NTg0IiwicyI6Ik1XRm1abUkzT0RRdFpERTNNUzAwTXpjd0xXSmhOemN0TldSbVpqaGhZekV6WTJGaCJ9
+    command: tunnel --no-autoupdate run --token ${CF_TUNNEL_TOKEN}
     environment:
-      - CF_TUNNEL_TOKEN=eyJhIjoiODNiYjUwODQwYjZhYmEyYzE4ODQ4ZjQ1NWI5NGY1OTMiLCJ0IjoiNDM2NDM2MzgtNTM2NC00ZmZkLTk1NmMtNDcxZjI3MGM1NTg0IiwicyI6Ik1XRm1abUkzT0RRdFpERTNNUzAwTXpjd0xXSmhOemN0TldSbVpqaGhZekV6WTJGaCJ9
+      - CF_TUNNEL_TOKEN=${CF_TUNNEL_TOKEN}
     network_mode: host
     depends_on:
       - news-portal
