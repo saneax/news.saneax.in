@@ -10,7 +10,10 @@
       "https://www.aljazeera.com/news/",
       "https://en.wikipedia.org/wiki/Realism_(international_relations)",
       "https://www.bbc.com/news"
-    ]
+    ],
+    "featuredImage": "/content/images/pragmatism-featured-card.jpg",
+    "subtitle": "From Washington to Beijing, leaders are ditching ideology for cold, hard pragmatism. The world order is being rewritten — and nobody asked the voters.",
+    "readingTime": 6
   },
   {
     "slug": "us-needs-india-germany-vassal",
@@ -26,7 +29,10 @@
       "https://www.dw.com/en/us-india-unveil-interim-trade-deal-framework/a-75852428",
       "https://www.cnbctv18.com/world/marco-rubio-india-visit-us-india-relations-trade-nuclear-energy-quad-explainer-ws-l-19911768.htm",
       "https://www.businesstoday.in/india/story/very-soon-marco-rubio-signals-major-india-us-trade-deal-amid-20-billion-investment-push-533015-2026-05-23"
-    ]
+    ],
+    "featuredImage": "/content/images/us-india-germany-header.jpg",
+    "subtitle": "America's sudden courtship of India reveals an uncomfortable truth about its European allies: they forgot how to say no.",
+    "readingTime": 8
   },
   {
     "slug": "chaitanya-charitamrita-discourse",
@@ -44,7 +50,10 @@
       "https://en.wikipedia.org/wiki/ISKCON",
       "https://en.wikipedia.org/wiki/Shikshashtakam",
       "https://en.wikipedia.org/wiki/Bhaktivinoda_Thakur"
-    ]
+    ],
+    "featuredImage": "/content/images/chaitanya-kirtan.png",
+    "subtitle": "A half-blind old man writing in a language he'd half-forgotten produced the foundational document of an entire theology. That alone is extraordinary.",
+    "readingTime": 11
   },
   {
     "slug": "who-painted-my-money-white-sree-iyer",
@@ -63,7 +72,10 @@
       "https://timesofindia.indiatimes.com/city/kolkata/under-lens-300-post-poll-violence-cases-from-2021/articleshow/131100439.cms",
       "https://ianslive.in/nia-probes-money-trail-behind-plot-to-destabilise-india-elections-immigration-and-maoist-protests--20250908194311",
       "https://www.ndtv.com/india-news/bomb-making-manuals-mission-2047-plan-document-what-agencies-claim-to-have-found-in-pfi-raids-3384163"
-    ]
+    ],
+    "featuredImage": "/content/images-op-octopus/01_nia_logo.png",
+    "subtitle": "Sree Iyer's fiction thriller about fake currency and NIA raids reads less like a novel and more like a prophecy. But how much is real?",
+    "readingTime": 10
   },
   {
     "slug": "bengal-bulldozer-suvendu-first-fortnight",
@@ -79,7 +91,10 @@
       "https://economictimes.indiatimes.com/news/politics-and-nation/west-bengal-to-transfer-bsf-land-for-border-fencing-within-45-days-cm-suvendu-adhikari/articleshow/131009019.cms",
       "https://www.business-standard.com/india-news/west-bengal-to-implement-ayushman-bharat-other-central-schemes-adhikari-126051100599_1.html",
       "https://www.thehindu.com/news/national/west-bengal/west-bengal-chief-minister-suvendu-adhikari-chairs-first-cabinet-meeting-finalises-six-projects/article70964807.ece"
-    ]
+    ],
+    "featuredImage": "/content/images-borders-bullets/01_trade_route_ships.png",
+    "subtitle": "Suvendu Adhikari's first 14 days as Bengal CM: bulldozers, border fences, and a complete governance pivot from confrontation to coordination.",
+    "readingTime": 10
   },
   {
     "slug": "suvendu-adhikari-bengal-cm",
@@ -93,7 +108,10 @@
       "https://economictimes.indiatimes.com/news/elections/assembly-elections/west-bengal/suvendu-adhikari-to-be-west-bengal-cm-pitches-team-bjp-model/articleshow/130965704.cms",
       "https://en.wikipedia.org/wiki/Suvendu_Adhikari",
       "https://www.livemint.com/politics/policy/suvendu-adhikari-6-major-challenges-for-west-bengals-1st-bjp-chief-minister-law-and-order-communal-harmony-and-more-11778508429261.html"
-    ]
+    ],
+    "featuredImage": "/content/images-suvendu/suvendu-oath.jpg",
+    "subtitle": "The man who buried Didi's empire and painted Bengal saffron. How Suvendu Adhikari pulled off what the BJP couldn't in 50 years.",
+    "readingTime": 8
   },
   {
     "slug": "the-machines-called-and-they-need-the-power-sorry",
@@ -110,7 +128,10 @@
       "https://www.bbc.com/news/articles/c4g0r3k5n92o",
       "https://www.theverge.com/2025/10/18/utah-data-center-protest-box-elder-stratos",
       "https://www.wsj.com/tech/ai/blackrock-larry-fink-ai-data-centers-investment-drones-a8f2c3b1"
-    ]
+    ],
+    "featuredImage": "/content/images/01_data_center.jpg",
+    "subtitle": "AI needs electricity. A lot of it. And the people of Lake Tahoe and rural Utah just found out they're paying the bill.",
+    "readingTime": 11
   },
   {
     "slug": "proxy-wars-winners",
@@ -118,7 +139,10 @@
     "publishedAt": "2026-05-17T16:00:00.000Z",
     "confidence": 0.85,
     "seedVideo": "https://www.youtube.com/watch?v=JohnnyHarrisProxyWars",
-    "sources": []
+    "sources": [],
+    "featuredImage": null,
+    "subtitle": "The quiet winners of every war you watch on television — and why the fighting never stops.",
+    "readingTime": 4
   },
   {
     "slug": "tucker-carlson-washington",
@@ -126,7 +150,10 @@
     "publishedAt": "2026-05-17T18:00:00.000Z",
     "confidence": 0.78,
     "seedVideo": "https://www.youtube.com/watch?v=TuckerCarlsonWashington",
-    "sources": []
+    "sources": [],
+    "featuredImage": null,
+    "subtitle": "The man Washington can't stop watching — and why that terrifies the establishment.",
+    "readingTime": 5
   },
   {
     "slug": "welcome",
@@ -134,6 +161,9 @@
     "publishedAt": "2026-05-17T20:00:00.000Z",
     "confidence": 1.0,
     "seedVideo": "",
-    "sources": []
+    "sources": [],
+    "featuredImage": null,
+    "subtitle": "Welcome to saneax news — analytical, opinionated journalism powered by ED.",
+    "readingTime": 2
   }
 ]
