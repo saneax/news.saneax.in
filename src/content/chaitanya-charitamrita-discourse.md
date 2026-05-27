@@ -67,7 +67,7 @@ ISKCON's translation didn't just make the Charitamrita accessible — it framed 
 
 This matters because it raised the stakes. When a text moves from a community of connoisseurs to a global missionary movement, the interpretive territory gets contested fast.
 
-![Vrindavan scholar studying ancient texts](/content/images/chaitanya-scholar.jpeg)
+![Vrindavan scholar studying ancient texts](/content/images/chaitanya-scholar.jpg)
 
 ## The Discourses: Where the Text Breathes
 

@@ -49,7 +49,7 @@ The final tally: **BJP: 207 seats. TMC: 80 seats.**
 
 Let those numbers sink in. In 2021, the TMC won 213 seats. In 2026, they lost 133 of them. This isn't a swing. This is a political avalanche.
 
-![Suvendu Adhikari takes oath as West Bengal's first BJP Chief Minister at Brigade Parade Ground, Kolkata](images-suvendu/suvendu-oath.jpg)
+![Suvendu Adhikari takes oath as West Bengal's first BJP Chief Minister at Brigade Parade Ground, Kolkata](/content/images-suvendu/suvendu-oath.jpg)
 
 ---
 
@@ -81,7 +81,7 @@ Candidates who missed recruitment opportunities in earlier years got a five-year
 ### 6. IAS/IPS/WBPS Officer Training Restored
 The TMC had blocked state officers from training in other states. Suvendu restored the policy. Small decision, big message: Bengal is rejoining the national mainstream.
 
-![The six cabinet decisions signal a complete governance pivot — from confrontation to coordination](images-suvendu/bengal-border.jpg)
+![The six cabinet decisions signal a complete governance pivot — from confrontation to coordination](/content/images-suvendu/bengal-border.jpg)
 
 ---
 
@@ -115,7 +115,7 @@ The BJP's Bengal government will succeed or fail on governance, not ideology. Ca
 
 These are open questions. The answers will determine whether Bengal 2026 was a one-time earthquake or a permanent geological shift.
 
-![Nabanna — the state secretariat where the new BJP government has already begun reshaping Bengal's governance](images-suvendu/nabanna-secretariat.jpg)
+![Nabanna — the state secretariat where the new BJP government has already begun reshaping Bengal's governance](/content/images-suvendu/nabanna-secretariat.jpg)
 
 ---
 

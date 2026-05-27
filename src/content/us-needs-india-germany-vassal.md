@@ -16,7 +16,7 @@ sources:
   - "https://economictimes.indiatimes.com/news/india/shared-humanitarian-values-connect-us-and-india-ambassador-gors-insightful-visit-with-rubio-to-kolkatas-missionaries-of-charity/articleshow/131272218.cms"
 ---
 
-![Header: America suddenly needs India — but the real story is about who can say no](images/us-india-germany-header.jpg)
+![Header: America suddenly needs India — but the real story is about who can say no](/content/images/us-india-germany-header.jpg)
 
 # The US Suddenly Needs India. Here's What That Tells You About Power.
 
@@ -48,7 +48,7 @@ Three things. China. Iran. And the slow, humiliating realization that Europe is 
 
 ## The Germany Problem
 
-![Germany as a vassal — a tethered eagle under the American shadow](images/us-india-germany-vassal.png)
+![Germany as a vassal — a tethered eagle under the American shadow](/content/images/us-india-germany-vassal.png)
 
 Here's the quiet part, said out loud: the United States has spent 80 years treating Germany as its most important European ally. And Germany has spent those 80 years being exactly what Spain's Deputy Prime Minister Yolanda Díaz recently called it — a "vassal state."
 
@@ -68,7 +68,7 @@ And now the US looks at this vassal — compliant but hollowed out, deindustrial
 
 ## Enter India
 
-![US and India — equals across the board, Europe diminished in the background](images/us-india-chessboard.png)
+![US and India — equals across the board, Europe diminished in the background](/content/images/us-india-chessboard.png)
 
 India is not Germany. India says no.
 

@@ -10,7 +10,7 @@ sources:
   - "https://www.bbc.com/news"
 ---
 
-![The cracked globe of ideology vs power](images/pragmatism-globe-crack.png)
+![The cracked globe of ideology vs power](/content/images/pragmatism-globe-crack.png)
 
 # Pragmatism Is Eating Ideology Alive — And That's Not Necessarily Good News
 
@@ -22,7 +22,7 @@ The short answer: yes, absolutely. The longer answer: it's more complicated — 
 
 ## The Death of the Liberal International Order
 
-![Falling white pieces on the board](images/pragmatism-chess.png)
+![Falling white pieces on the board](/content/images/pragmatism-chess.png)
 
 Let's not be coy about what "ideology" meant in global affairs for the past three decades. After the Cold War ended, the West — led by the United States — operated under a triumphalist liberal ideology. Democracy promotion. Free trade as peace-builder. Human rights as universal values. International law as the referee. The "end of history" was supposed to be the beginning of permanent ideological consensus.
 
@@ -62,7 +62,7 @@ And exhaustion is not a foreign policy.
 
 ---
 
-![A blank flag in the desert](images/pragmatism-blank-flag.jpg)
+![A blank flag in the desert](/content/images/pragmatism-blank-flag.jpg)
 
 ## The Costs of Ideology-Free Politics
 
