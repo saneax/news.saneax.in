@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { supabase } from '../lib/supabase'
+import { supabase, isSupabaseReady } from '../lib/supabase'
 
 export default function CommentSection({ articleSlug }) {
   const [comments, setComments] = useState([])
@@ -7,6 +7,11 @@ export default function CommentSection({ articleSlug }) {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(false)
   const [authLoading, setAuthLoading] = useState(false)
+
+  // Gracefully disable if Supabase is not configured
+  if (!isSupabaseReady) {
+    return null
+  }
 
   // Check existing session
   useEffect(() => {
