@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { useEffect, useState, useRef } from 'react'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 import { getArticle } from '../lib/articles'
 import CommentSection from '../components/CommentSection'
 
@@ -141,7 +142,7 @@ export default function Article() {
 
         {/* Article body */}
         <div className="article-body mb-12">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{article.body}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{article.body}</ReactMarkdown>
         </div>
 
         {/* Sources */}
