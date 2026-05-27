@@ -4,10 +4,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        - VITE_SUPABASE_URL=${VITE_SUPABASE_URL}
+        - VITE_SUPABASE_ANON_KEY=${VITE_SUPABASE_ANON_KEY}
     container_name: news-portal
     restart: unless-stopped
     ports:
       - "127.0.0.1:4080:80"
+    env_file:
+      - .env
     healthcheck:
       test: ["CMD-SHELL", "wget -q --spider http://127.0.0.1:80/ || exit 1"]
       interval: 30s

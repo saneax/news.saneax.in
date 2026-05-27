@@ -1,21 +1,18 @@
 import { useState, useEffect, useCallback } from 'react'
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase'
 
-// ─── Supabase check ──────────────────────────────────
-const isSupabaseReady = typeof window !== 'undefined' &&
-  window.__SUPABASE_URL__ &&
-  window.__SUPABASE_ANON_KEY__
+const isSupabaseReady = !!(SUPABASE_URL && SUPABASE_ANON_KEY)
 
 let supabase = null
 if (isSupabaseReady) {
   try {
     const { createClient } = await import('@supabase/supabase-js')
-    supabase = createClient(window.__SUPABASE_URL__, window.__SUPABASE_ANON_KEY__)
+    supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   } catch (e) {
     console.warn('Supabase init failed:', e)
   }
 }
 
-// ─── Comment Section ─────────────────────────────────
 export default function CommentSection({ articleSlug }) {
   const [user, setUser] = useState(null)
   const [comments, setComments] = useState([])
@@ -23,7 +20,6 @@ export default function CommentSection({ articleSlug }) {
   const [loading, setLoading] = useState(false)
   const [submitting, setSubmitting] = useState(false)
 
-  // Load comments
   const loadComments = useCallback(async () => {
     if (!supabase) return
     setLoading(true)
@@ -43,25 +39,20 @@ export default function CommentSection({ articleSlug }) {
   useEffect(() => {
     if (!supabase) return
     loadComments()
-    // Listen for auth changes
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setUser(session?.user ?? null)
     })
-    // Check existing session
     supabase.auth.getSession().then(({ data: { session } }) => {
       setUser(session?.user ?? null)
     })
     return () => subscription.unsubscribe()
   }, [loadComments])
 
-  // Google OAuth sign in
   const signInWithGoogle = async () => {
     if (!supabase) return
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
-      options: {
-        redirectTo: window.location.origin + window.location.pathname,
-      },
+      options: { redirectTo: window.location.origin + window.location.pathname },
     })
     if (error) console.error('OAuth error:', error)
   }
@@ -72,7 +63,6 @@ export default function CommentSection({ articleSlug }) {
     setUser(null)
   }
 
-  // Submit comment
   const handleSubmit = async (e) => {
     e.preventDefault()
     if (!newComment.trim() || !user || !supabase) return
@@ -80,23 +70,15 @@ export default function CommentSection({ articleSlug }) {
     try {
       const { error } = await supabase
         .from('comments')
-        .insert({
-          article_slug: articleSlug,
-          user_id: user.id,
-          content: newComment.trim(),
-        })
-      if (!error) {
-        setNewComment('')
-        loadComments()
-      }
+        .insert({ article_slug: articleSlug, user_id: user.id, content: newComment.trim() })
+      if (!error) { setNewComment(''); loadComments() }
     } catch (e) {
       console.error('Comment submit error:', e)
     }
     setSubmitting(false)
   }
 
-  // ─── No Supabase → show placeholder ──────────────
-  if (!supabase) {
+  if (!isSupabaseReady) {
     return (
       <div className="mb-12 p-6 rounded-2xl bg-gray-50 border border-gray-100 text-center">
         <span className="text-2xl">💬</span>
@@ -109,29 +91,21 @@ export default function CommentSection({ articleSlug }) {
 
   return (
     <div className="mb-12">
-      {/* Section header */}
       <div className="flex items-center justify-between mb-6">
         <h3 className="text-lg font-bold text-gray-800">
           💬 Comments {comments.length > 0 && <span className="text-violet-500">({comments.length})</span>}
         </h3>
         {user && (
-          <button
-            onClick={signOut}
-            className="text-xs text-gray-400 hover:text-gray-600 transition-colors"
-          >
+          <button onClick={signOut} className="text-xs text-gray-400 hover:text-gray-600 transition-colors">
             Sign out
           </button>
         )}
       </div>
 
-      {/* Auth gate or comment form */}
       {!user ? (
         <div className="p-6 rounded-2xl bg-gray-50 border border-gray-100 text-center">
           <p className="text-sm text-gray-500 mb-4">Sign in with Google to join the discussion.</p>
-          <button
-            onClick={signInWithGoogle}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all text-sm font-medium text-gray-700"
-          >
+          <button onClick={signInWithGoogle} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 transition-all text-sm font-medium text-gray-700">
             <svg className="w-4 h-4" viewBox="0 0 24 24">
               <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/>
               <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
@@ -176,7 +150,6 @@ export default function CommentSection({ articleSlug }) {
         </form>
       )}
 
-      {/* Comment list */}
       {loading ? (
         <div className="text-center py-6 text-sm text-gray-400">Loading comments...</div>
       ) : comments.length === 0 ? (
@@ -194,9 +167,7 @@ export default function CommentSection({ articleSlug }) {
               )}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <span className="text-sm font-semibold text-gray-700">
-                    {c.profiles?.display_name || 'Anonymous'}
-                  </span>
+                  <span className="text-sm font-semibold text-gray-700">{c.profiles?.display_name || 'Anonymous'}</span>
                   <time className="text-xs text-gray-400">{formatDate(c.created_at)}</time>
                 </div>
                 <p className="text-sm text-gray-600 leading-relaxed">{c.content}</p>
@@ -212,8 +183,7 @@ export default function CommentSection({ articleSlug }) {
 function formatDate(iso) {
   if (!iso) return ''
   const d = new Date(iso)
-  const now = new Date()
-  const diff = now - d
+  const diff = Date.now() - d
   if (diff < 60000) return 'just now'
   if (diff < 3600000) return `${Math.floor(diff / 60000)}m ago`
   if (diff < 86400000) return `${Math.floor(diff / 3600000)}h ago`
