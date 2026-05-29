@@ -1,5 +1,21 @@
 [
     {
+        "slug": "galloway-ai-wasnt-built-for-you",
+        "title": "AI Wasn't Built For You: Scott Galloway and the Psychology of a World That Doesn't Need You",
+        "publishedAt": "2026-05-29T18:00:00.000Z",
+        "confidence": 0.91,
+        "seedVideo": "https://www.youtube.com/watch?v=IQh7nI02imA",
+        "sources": [
+            "https://www.youtube.com/watch?v=IQh7nI02imA",
+            "https://www.profgalloway.com/",
+            "https://en.wikipedia.org/wiki/Yuval_Noah_Harari",
+            "https://en.wikipedia.org/wiki/Player_Piano_(novel)"
+        ],
+        "featuredImage": "/content/images/galloway-ai-dystopia-featured.jpg",
+        "subtitle": "Scott Galloway sat down and said what every tech CEO is thinking: they don't need you anymore. A deep psychological analysis of the builders, the displaced, and the dystopian future AI is actually creating.",
+        "readingTime": 14
+    },
+    {
         "slug": "india-ai-reckoning-outsourcing-crisis",
         "title": "India's AI Reckoning: The Outsourcing Empire That Stares Into the Abyss",
         "publishedAt": "2026-05-29T12:45:00.000Z",
