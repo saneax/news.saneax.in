@@ -1,7 +1,39 @@
 [
   {
+    "slug": "modi-cyprus-counter-turkey",
+    "title": "Modi's Cyprus Move: India's Bold Counter to Turkey's Pakistan Alliance",
+    "publishedAt": "2026-05-29T07:30:00.000Z",
+    "confidence": 0.87,
+    "seedVideo": "https://www.youtube.com/watch?v=VotpDAnBWd0",
+    "sources": [
+      "https://www.youtube.com/watch?v=VotpDAnBWd0",
+      "https://www.mea.gov.in/",
+      "https://www.sipri.org/databases/armstransfers"
+    ],
+    "featuredImage": "/content/images/modi-cyprus-header.jpg",
+    "subtitle": "India walks into Turkey's backyard and shakes hands with the neighbour Ankara has been bullying for fifty years. The era of reactive diplomacy is dead.",
+    "readingTime": 9
+  },
+  {
+    "slug": "through-outsider-eyes-foreigner-india",
+    "title": "Through Outsider Eyes: What India Really Looks Like When You Stop Watching From Afar",
+    "publishedAt": "2026-05-28T15:30:00.000Z",
+    "confidence": 0.83,
+    "seedVideo": "https://www.youtube.com/watch?v=T-EWUDauK8Q",
+    "sources": [
+      "https://www.youtube.com/watch?v=T-EWUDauK8Q",
+      "https://www.indiatoday.in/trending-news/story/us-woman-viral-video-pros-and-cons-of-living-in-india-for-foreigners-kristen-fischer-instagram-reels-2761967-2025-07-27",
+      "https://www.hindustantimes.com/trending/usborn-woman-opens-up-about-cultural-shock-after-moving-to-india-i-m-still-adjusting-101770224571754.html",
+      "https://www.masalaofcultures.com/post/navigating-culture-shock-a-latina-living-in-india",
+      "https://in.mashable.com/culture/96052/american-woman-reveals-why-she-chose-extraordinary-life-in-india-netizens-applaud-her-honesty"
+    ],
+    "featuredImage": "/content/images/outsider-eyes-featured.jpg",
+    "subtitle": "A European woman feels more free in India than Europe. The hidden dating scene. The garbage. The hospitality. What foreigners actually discover when they stay.",
+    "readingTime": 10
+  },
+  {
     "slug": "pragmatism-replacing-ideology",
-    "title": "Pragmatism Is Eating Ideology Alive — And That's Not Necessarily Good News",
+    "title": "Pragmatism Is Eating Ideology Alive \u2014 And That's Not Necessarily Good News",
     "publishedAt": "2026-05-27T17:00:00.000Z",
     "confidence": 0.84,
     "seedVideo": "https://youtu.be/-RZvFcwcclM",
@@ -12,7 +44,7 @@
       "https://www.bbc.com/news"
     ],
     "featuredImage": "/content/images/pragmatism-featured-card.jpg",
-    "subtitle": "From Washington to Beijing, leaders are ditching ideology for cold, hard pragmatism. The world order is being rewritten — and nobody asked the voters.",
+    "subtitle": "From Washington to Beijing, leaders are ditching ideology for cold, hard pragmatism. The world order is being rewritten \u2014 and nobody asked the voters.",
     "readingTime": 6
   },
   {
@@ -141,7 +173,7 @@
     "seedVideo": "https://www.youtube.com/watch?v=JohnnyHarrisProxyWars",
     "sources": [],
     "featuredImage": null,
-    "subtitle": "The quiet winners of every war you watch on television — and why the fighting never stops.",
+    "subtitle": "The quiet winners of every war you watch on television \u2014 and why the fighting never stops.",
     "readingTime": 4
   },
   {
@@ -152,7 +184,7 @@
     "seedVideo": "https://www.youtube.com/watch?v=TuckerCarlsonWashington",
     "sources": [],
     "featuredImage": null,
-    "subtitle": "The man Washington can't stop watching — and why that terrifies the establishment.",
+    "subtitle": "The man Washington can't stop watching \u2014 and why that terrifies the establishment.",
     "readingTime": 5
   },
   {
@@ -163,7 +195,7 @@
     "seedVideo": "",
     "sources": [],
     "featuredImage": null,
-    "subtitle": "Welcome to saneax news — analytical, opinionated journalism powered by ED.",
+    "subtitle": "Welcome to saneax news \u2014 analytical, opinionated journalism powered by ED.",
     "readingTime": 2
   }
 ]
