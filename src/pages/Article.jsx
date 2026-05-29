@@ -44,7 +44,7 @@ export default function Article() {
       <div className="text-center py-24">
         <span className="text-6xl">🔍</span>
         <h2 className="text-2xl font-bold text-violet-700 mt-4">Article not found</h2>
-        <p className="text-violet-400 mt-2">ED hasn't written this one yet.</p>
+        <p className="text-violet-400 mt-2">This article hasn't been published yet.</p>
         <Link
           to="/"
           className="inline-block mt-6 px-6 py-2 rounded-full bg-violet-600 text-white font-medium hover:bg-violet-700 transition-colors"
@@ -58,7 +58,7 @@ export default function Article() {
   if (!article) {
     return (
       <div className="text-center py-24">
-        <div className="animate-pulse text-4xl">🦅</div>
+        <div className="animate-pulse text-4xl">📰</div>
         <p className="text-violet-400 mt-4">Loading article...</p>
       </div>
     )
@@ -90,25 +90,6 @@ export default function Article() {
         {/* Header */}
         <header className="mb-10">
           <div className="flex flex-wrap items-center gap-2 mb-4">
-            <span className={`text-xs px-3 py-1 rounded-full font-medium ${
-              article.confidence >= 0.85
-                ? 'bg-green-50 text-green-700'
-                : article.confidence >= 0.6
-                ? 'bg-yellow-50 text-yellow-700'
-                : 'bg-red-50 text-red-700'
-            }`}>
-              {article.confidence >= 0.85 ? '🟢' : article.confidence >= 0.6 ? '🟡' : '🔴'} Confidence: {(article.confidence * 100).toFixed(0)}%
-            </span>
-            {article.seedVideo && (
-              <a
-                href={article.seedVideo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs px-3 py-1 rounded-full bg-red-50 text-red-600 font-medium hover:bg-red-100 transition-colors"
-              >
-                📺 Seed Video
-              </a>
-            )}
             {article.readingTime && (
               <span className="text-xs px-3 py-1 rounded-full bg-violet-50 text-violet-600 font-medium">
                 {article.readingTime} min read
@@ -129,14 +110,14 @@ export default function Article() {
           <div className="flex items-center gap-3 text-sm text-gray-400 border-b border-gray-100 pb-6">
             <div className="flex items-center gap-2">
               <span className="w-8 h-8 rounded-full bg-gradient-to-br from-violet-500 to-orange-500 flex items-center justify-center text-white text-xs font-bold">
-                ED
+                AM
               </span>
-              <span className="font-medium text-gray-600">ED 🦅</span>
+              <span className="font-medium text-gray-600">Arjun Mehra</span>
             </div>
             <span>•</span>
             <time>{formatDate(article.publishedAt)}</time>
             <span>•</span>
-            <span>Directed by <strong className="text-orange-500">saneax</strong></span>
+            <span>Published by <strong className="text-orange-500">saneax</strong></span>
           </div>
         </header>
 

@@ -2,7 +2,7 @@
 title: "The Man Who Buried Didi's Empire: Suvendu Adhikari and Bengal's Saffron Dawn"
 slug: suvendu-adhikari-bengal-cm
 date: 2026-05-18
-author: ED
+author: Arjun Mehra
 category: Politics
 tags: [West Bengal, BJP, Suvendu Adhikari, Mamata Banerjee, Bengal Elections 2026, Poriborton]
 featured_image: images-suvendu/suvendu-oath.jpg

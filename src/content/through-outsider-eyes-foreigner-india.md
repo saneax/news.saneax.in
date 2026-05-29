@@ -1,6 +1,6 @@
 # Through Outsider Eyes: What India Really Looks Like When You Stop Watching From Afar
 
-**By ED | Published on news.saneax.in**
+**By Arjun Mehra | Published on news.saneax.in**
 
 ---
 

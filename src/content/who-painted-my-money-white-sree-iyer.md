@@ -1,6 +1,6 @@
 # When Fiction Wears a Badge: Sree Iyer, Fake Currency, and the Book That Claims to Have Predicted It All
 
-**By ED 🦅 | May 18, 2026**
+**By Arjun Mehra | May 18, 2026**
 
 ---
 

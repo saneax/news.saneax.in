@@ -32,7 +32,6 @@ export default function Home() {
                 <span className="text-xs px-2.5 py-0.5 rounded-full bg-orange-500 text-white font-semibold uppercase tracking-wider">
                   Featured
                 </span>
-                <ConfidenceBadge confidence={featured.confidence} />
                 {featured.readingTime && (
                   <span className="text-xs text-white/70">{featured.readingTime} min read</span>
                 )}
@@ -48,7 +47,7 @@ export default function Home() {
               <div className="flex items-center gap-3 mt-3 text-xs text-white/60">
                 <time>{formatDate(featured.publishedAt)}</time>
                 <span>•</span>
-                <span>By <strong className="text-white/80">ED</strong> 🦅</span>
+                <span>By <strong className="text-white/80">Arjun Mehra</strong></span>
               </div>
             </div>
           </div>
@@ -80,7 +79,6 @@ export default function Home() {
                   </div>
                   <div className="p-5">
                     <div className="flex items-center gap-2 mb-2">
-                      <ConfidenceBadge confidence={article.confidence} small />
                       {article.readingTime && (
                         <span className="text-xs text-gray-400">{article.readingTime} min</span>
                       )}
@@ -112,7 +110,7 @@ export default function Home() {
         <section className="mb-12">
           <div className="flex items-center gap-3 mb-6">
             <div className="h-px flex-1 bg-gradient-to-r from-gray-200 to-transparent" />
-            <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest">More from ED</h3>
+            <h3 className="text-sm font-bold text-gray-400 uppercase tracking-widest">More from Arjun</h3>
             <div className="h-px flex-1 bg-gradient-to-l from-gray-200 to-transparent" />
           </div>
           <div className="divide-y divide-gray-100">
@@ -150,7 +148,7 @@ export default function Home() {
         <div className="text-center py-20">
           <div className="text-6xl mb-4">📝</div>
           <p className="text-violet-500 text-lg">No articles published yet.</p>
-          <p className="text-violet-300 text-sm mt-2">ED is waiting for a seed...</p>
+          <p className="text-violet-300 text-sm mt-2">Check back soon.</p>
         </div>
       )}
 
@@ -158,27 +156,11 @@ export default function Home() {
       {articles.length > 0 && (
         <div className="text-center py-8 px-6 rounded-2xl bg-gradient-to-br from-violet-50 via-white to-orange-50 border border-violet-100">
           <p className="text-violet-600 text-sm">
-            <strong>Want an article?</strong> Send a YouTube link to Sanbot on Telegram and ED will get to work.
+            <strong>Have a story tip?</strong> Send it to Sanbot and Arjun will investigate.
           </p>
         </div>
       )}
     </div>
-  )
-}
-
-function ConfidenceBadge({ confidence, small }) {
-  if (!confidence) return null
-  const label = confidence >= 0.85 ? 'High confidence' : confidence >= 0.6 ? 'Moderate' : 'Under review'
-  const color = confidence >= 0.85
-    ? 'bg-green-50 text-green-700'
-    : confidence >= 0.6
-    ? 'bg-yellow-50 text-yellow-700'
-    : 'bg-red-50 text-red-700'
-  const icon = confidence >= 0.85 ? '🟢' : confidence >= 0.6 ? '🟡' : '🔴'
-  return (
-    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${color} ${small ? 'text-[10px]' : ''}`}>
-      {icon} {label}
-    </span>
   )
 }
 

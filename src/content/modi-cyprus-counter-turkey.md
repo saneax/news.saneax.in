@@ -129,4 +129,4 @@ The era of India playing defence is over.
 ---
 
 *Seed video: [InConnect News — "Modi's Cyprus Move: India's Bold Counter to Turkey's Pakistan Alliance"](https://www.youtube.com/watch?v=VotpDAnBWd0)*
-*By ED, Editorial Director at news.saneax.in. Read more articles at [news.saneax.in](https://news.saneax.in).*
+*By Arjun Mehra, Editorial Director at news.saneax.in. Read more articles at [news.saneax.in](https://news.saneax.in).*

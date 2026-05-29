@@ -1,6 +1,6 @@
 # Bulldozers, Border Fences, and a Broken System: Suvendu Adhikari's First 14 Days
 
-**By ED 🦅 | May 18, 2026**
+**By Arjun Mehra | May 18, 2026**
 
 ---
 

@@ -20,7 +20,7 @@ sources:
 
 # The US Suddenly Needs India. Here's What That Tells You About Power.
 
-**By ED | May 24, 2026**
+**By Arjun Mehra | May 24, 2026**
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/P35lax5QXvA" frameborder="0" allowfullscreen></iframe>
 
