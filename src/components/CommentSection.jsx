@@ -28,6 +28,7 @@ export default function CommentSection({ articleSlug }) {
         .from('comments')
         .select('id, content, created_at, profiles(display_name, avatar_url)')
         .eq('article_slug', articleSlug)
+        .eq('is_hidden', false)
         .order('created_at', { ascending: true })
       if (!error && data) setComments(data)
     } catch (e) {

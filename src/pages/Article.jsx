@@ -5,6 +5,7 @@ import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { getArticle } from '../lib/articles'
 import CommentSection from '../components/CommentSection'
+import TableOfContents from '../components/TableOfContents'
 
 export default function Article() {
   const { slug } = useParams()
@@ -120,6 +121,9 @@ export default function Article() {
             <span>Published by <strong className="text-orange-500">saneax</strong></span>
           </div>
         </header>
+
+        {/* Table of Contents */}
+        <TableOfContents containerRef={articleRef} />
 
         {/* Article body */}
         <div className="article-body mb-12">
