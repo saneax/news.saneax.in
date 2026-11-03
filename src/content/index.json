@@ -1,5 +1,24 @@
 [
     {
+        "slug": "hackertube-karpathy",
+        "title": "He Didn't Write a Line of Code. He Shipped a Product in Two Hours.",
+        "publishedAt": "2026-11-03T14:32:00.000Z",
+        "confidence": 0.82,
+        "seedVideo": "https://karpathy.bearblog.dev/hacker-tube/",
+        "sources": [
+            "https://karpathy.bearblog.dev/hacker-tube/",
+            "https://hackertube.org/",
+            "https://en.wikipedia.org/wiki/Andrej_Karpathy",
+            "https://en.wikipedia.org/wiki/Vibe_coding",
+            "https://en.wikipedia.org/wiki/Enshittification",
+            "https://en.wikipedia.org/wiki/Claude_(language_model)",
+            "https://en.wikipedia.org/wiki/AI_agent",
+            "https://huggingface.co/datasets/open-index/hacker-news"
+        ],
+        "subtitle": "Andrej Karpathy built a hardened, deployed YouTube rival by talking to a chatbot. The future of software just walked past us — and left most of the industry standing still.",
+        "readingTime": 9
+    },
+    {
         "slug": "galloway-ai-wasnt-built-for-you",
         "title": "AI Wasn't Built For You: Scott Galloway and the Psychology of a World That Doesn't Need You",
         "publishedAt": "2026-05-29T18:00:00.000Z",
