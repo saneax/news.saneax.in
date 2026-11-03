@@ -16,7 +16,8 @@
             "https://huggingface.co/datasets/open-index/hacker-news"
         ],
         "subtitle": "Andrej Karpathy built a hardened, deployed YouTube rival by talking to a chatbot. The future of software just walked past us — and left most of the industry standing still.",
-        "readingTime": 9
+        "readingTime": 9,
+        "featuredImage": "/content/images/hackertube-karpathy-featured.jpg"
     },
     {
         "slug": "galloway-ai-wasnt-built-for-you",
@@ -56,7 +57,7 @@
             "https://flexiple.com/global-capability-centers/india-global-capability-centers-statistics"
         ],
         "featuredImage": "/content/images/india-ai-reckoning-featured.jpg",
-        "subtitle": "TCS is cutting thousands. AI targets exactly the work India bet its economy on. The question isn't whether disruption is coming \u2014 it's whether India adapts or breaks.",
+        "subtitle": "TCS is cutting thousands. AI targets exactly the work India bet its economy on. The question isn't whether disruption is coming — it's whether India adapts or breaks.",
         "readingTime": 14
     },
     {
@@ -93,7 +94,7 @@
     },
     {
         "slug": "pragmatism-replacing-ideology",
-        "title": "Pragmatism Is Eating Ideology Alive \u2014 And That's Not Necessarily Good News",
+        "title": "Pragmatism Is Eating Ideology Alive — And That's Not Necessarily Good News",
         "publishedAt": "2026-05-27T17:00:00.000Z",
         "confidence": 0.84,
         "seedVideo": "https://youtu.be/-RZvFcwcclM",
@@ -104,7 +105,7 @@
             "https://www.bbc.com/news"
         ],
         "featuredImage": "/content/images/pragmatism-featured-card.jpg",
-        "subtitle": "From Washington to Beijing, leaders are ditching ideology for cold, hard pragmatism. The world order is being rewritten \u2014 and nobody asked the voters.",
+        "subtitle": "From Washington to Beijing, leaders are ditching ideology for cold, hard pragmatism. The world order is being rewritten — and nobody asked the voters.",
         "readingTime": 6
     },
     {
@@ -233,7 +234,7 @@
         "seedVideo": "https://www.youtube.com/watch?v=JohnnyHarrisProxyWars",
         "sources": [],
         "featuredImage": null,
-        "subtitle": "The quiet winners of every war you watch on television \u2014 and why the fighting never stops.",
+        "subtitle": "The quiet winners of every war you watch on television — and why the fighting never stops.",
         "readingTime": 4
     },
     {
@@ -244,7 +245,7 @@
         "seedVideo": "https://www.youtube.com/watch?v=TuckerCarlsonWashington",
         "sources": [],
         "featuredImage": null,
-        "subtitle": "The man Washington can't stop watching \u2014 and why that terrifies the establishment.",
+        "subtitle": "The man Washington can't stop watching — and why that terrifies the establishment.",
         "readingTime": 5
     },
     {
@@ -255,7 +256,7 @@
         "seedVideo": "",
         "sources": [],
         "featuredImage": null,
-        "subtitle": "Welcome to saneax news \u2014 analytical, opinionated journalism powered by ED.",
+        "subtitle": "Welcome to saneax news — analytical, opinionated journalism powered by ED.",
         "readingTime": 2
     }
 ]
