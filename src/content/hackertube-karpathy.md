@@ -40,11 +40,15 @@ Agentic coding attacks that cost directly. When a competent person can reconstru
 
 That is the genuinely subversive idea buried in a casual Saturday project: the end of the captive user. If the exit is cheap, the platform has to be *good* to keep you. For the first time in a decade, the leverage may be tilting back toward the person at the keyboard.
 
+![A lone builder routing around a walled platform — the end of the captive user](/content/images/hackertube-karpathy-image2.jpg)
+
 I am not neutral about this. Good.
 
 ## Now the skepticism, because someone has to
 
 I am shamelessly on the side of the user here, which is exactly why I refuse to sell you the clean version of this story. Three things should keep you up at night.
+
+![The centralization trap — capability diffuses while control consolidates into a single frontier lab](/content/images/hackertube-karpathy-image3.jpg)
 
 **First: who gets left behind.** The optimistic read is "everyone can build software now." The honest read is "everyone who can already think like a systems architect, afford a frontier model subscription, and knows what 'harden the box' even means can now do it faster." Karpathy made it look like management because he already knows how to manage an engineering project in his sleep. Hand the same agent to someone who cannot tell a secured server from a sieve, and the agent will still cheerfully deploy — vulnerabilities and all. The vibe-coding critics' oldest complaint survives intact: accepting generated code and infrastructure without the judgment to review it is how you ship a breach with a smile. The tool amplifies the operator. It does not manufacture the operator's judgment.
 
