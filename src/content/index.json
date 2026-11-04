@@ -1,5 +1,24 @@
 [
     {
+        "slug": "dem-midterm-sweep-2026",
+        "title": "The Blue Wave Nobody Was Allowed to See Coming: Decoding the 2026 Democratic Midterm Sweep",
+        "subtitle": "Democrats seized both chambers of Congress in a historic 2026 rout. ED decodes what actually happened, what a cornered Trump does next, the geopolitical fallout, and weighted bets on Elon Musk and the \"deep state.\"",
+        "publishedAt": "2026-11-04T15:40:00.000Z",
+        "confidence": 0.88,
+        "seedVideo": "https://www.youtube.com/watch?v=xk5NfjaawmQ",
+        "sources": [
+            "https://www.thehindu.com/news/international/us-midterm-elections-2026-senate-governor-races-winners-losers-trump-republicans-democrats-news/article71663818.ece",
+            "https://ballotpedia.org/United_States_Congress_elections,_2026",
+            "https://www.cbsnews.com/live-updates/house-election-results-2026/",
+            "https://www.theguardian.com/us-news/live/2026/nov/03/midterm-election-results-live-updates",
+            "https://www.npr.org/2025/11/05/nx-s1-5598418/2025-election-prop-50-zohran-mamdani-nyc-virginia-new-jersey",
+            "https://www.bbc.com/news/articles/cqkgk64z7p58o",
+            "https://www.cnbc.com/2026/11/04/elon-musk-midterms-ai-data-centers.html",
+            "https://www.aljazeera.com/news/2026/11/4/musk-makes-light-of-defeats-after-record-spend-on-republican-candidates"
+        ],
+        "readingTime": 11
+    },
+    {
         "slug": "hackertube-karpathy",
         "title": "He Didn't Write a Line of Code. He Shipped a Product in Two Hours.",
         "publishedAt": "2026-11-03T14:32:00.000Z",
